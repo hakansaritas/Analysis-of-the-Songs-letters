@@ -1,5 +1,5 @@
 # ######################################################################
-# ##########   NUMBER OF THE LETTERS IN THE LYRIC ! ####################
+# ##########   NUMBER OF THE LETTERS IN THE SONGS ! ####################
 
 # This work is about calculation of frequency of the unique letters in band lyrics
 # using basic python commands. 
@@ -39,7 +39,7 @@ import pandas as pd
 from lyricsgenius import Genius
 pd.set_option('display.max_columns', None)
 
-api_key = "CPZ6u-zmCHAckkq_AvhlQPTdVQwM01UF44JIKOJiwT4TlrAngggD_HXpmY3tk9XZ"
+api_key = "ENTER YOUR API KEY"
 
 
 def letters_of_songs(list_of_bands=["Rainbow"], num_of_song=2):
@@ -47,7 +47,7 @@ def letters_of_songs(list_of_bands=["Rainbow"], num_of_song=2):
     calculation of frequency of the unique letters in lyrics writing in english.
 
     Args:
-        List_of_bands : Artist names you want to analyze, list
+        list_of_bands : Artist names you want to analyze, list
         num_of_song: number of songs requested for each artist, int 
         
     Returns:
@@ -118,8 +118,8 @@ def letters_of_songs(list_of_bands=["Rainbow"], num_of_song=2):
                 continue
 
     # output             
-    df.to_excel("all_songs_deneme.xlsx")
-    df.to_csv("all_songs_deneme")
+    df.to_excel("hard_rock_dataset.xlsx", index=False)
+    df.to_csv("hard_rock_dataset", index=False)
             
 
 
